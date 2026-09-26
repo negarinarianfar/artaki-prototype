@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Artaki temporary app icon</title>
+  <rect width="1024" height="1024" rx="224" fill="#06171A"/>
+  <rect x="58" y="58" width="908" height="908" rx="182" fill="none" stroke="#21D4B4" stroke-width="34"/>
+  <path fill="#21D4B4" fill-rule="evenodd" d="M512 196 239 823h151l48-125h148l48 125h151L512 196Zm0 252 47 126h-94l47-126Z"/>
+  <path d="M389 637h246" stroke="#F7FBFB" stroke-width="36" stroke-linecap="round"/>
+</svg>
