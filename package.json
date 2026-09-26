@@ -1,0 +1,10 @@
+{
+  "name": "artaki-clickable-prototype",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "build": "mkdir -p dist/assets && cp index.html styles.css data.js views.js app.js dist/ && cp assets/artaki-demo.mp4 dist/assets/"
+  }
+}
+ 

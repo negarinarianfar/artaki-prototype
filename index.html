@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071317" />
+
+    <title>Artaki — Coach Intelligence Prototype</title>
+    <meta
+      name="description"
+      content="A clickable, coach-centered WAKO K1 video analysis concept prototype."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+       ثابت‌ترین بخش برنامه: قاب اصلی، منو و محل نمایش صفحات
+       برای تغییر اطلاعات مبارزان به data.js برو.
+  ====================================================== -->
+    <div class="shell">
+      <aside class="sidebar">
+        <a class="brand" href="#overview" aria-label="Artaki home">
+          <span class="brandmark">A</span>
+          <span>
+            ARTAKI
+            <small>Coach Intelligence</small>
+          </span>
+        </a>
+
+        <div class="prototype-badge">
+          <span></span>
+          Concept Prototype
+        </div>
+
+        <nav aria-label="Main navigation">
+          <a href="#overview" data-route="overview"><i>01</i> Overview</a>
+          <a href="#upload" data-route="upload"><i>02</i> Upload Video</a>
+          <a href="#processing" data-route="processing"><i>03</i> Processing</a>
+          <a href="#analysis" data-route="analysis"><i>04</i> Fight Analysis</a>
+          <a href="#report" data-route="report"><i>05</i> PDF Report</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <span>Recognition scope</span>
+          <strong id="sidebar-techniques">Jab · Cross · Roundhouse Kick</strong>
+          <small>Other events enter coach review.</small>
+        </div>
+
+        <div class="sidebar-foot">
+          <div class="avatar">NA</div>
+          <div>
+            <strong>Negar Arianfar</strong>
+            <small>Founder workspace</small>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <button class="menu" aria-label="Open navigation">☰</button>
+
+          <div>
+            <span class="crumb" id="workspace-label"
+              >ARTAKI / WAKO K1 WORKSPACE</span
+            >
+            <h1 id="page-title">Overview</h1>
+          </div>
+
+          <div class="top-actions">
+            <span class="simulation">◆ Simulated AI Data</span>
+            <span class="ruleset" id="ruleset-label"
+              >Kickboxing · WAKO K1 Style</span
+            >
+          </div>
+        </header>
+
+        <!-- views.js صفحه انتخاب‌شده را داخل این div قرار می‌دهد. -->
+        <div id="app"></div>
+      </main>
+    </div>
+
+    <!-- views.js همه Modalها را داخل این قسمت می‌سازد. -->
+    <div id="modal-root"></div>
+
+    <div id="toast" role="status"></div>
+
+    <!-- ترتیب این سه فایل مهم است: داده، صفحه‌ها، منطق -->
+    <script src="data.js"></script>
+    <script src="views.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
